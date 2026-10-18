@@ -1,0 +1,19 @@
+print("==== ALLOWANCE REPORT====")
+ 
+
+name = input("enter student name: ")
+weekly = float(input("enter wekly allowance: "))
+transport = int(input("enter transportion cost: "))
+food = int(input("enter food expenses: "))
+school = (input("enter school supplies cost: "))
+other = int(input("enter other expense: "))
+
+total_weekly = transport + food + school - other
+remaining = weekly - total_weekly
+average = total_weekly / 7
+
+print("student name:", name)
+print("total expense:", total_weekly)
+print("reamining allowance:", remaining)
+print("average daily expense:", average)
+print("==== END OF THE REPORT ====")
